@@ -2,9 +2,11 @@ streamlit
 pandas
 numpy
 torch
+matplotlib
 transformers
 scikit-learn
 joblib
 nltk
 xgboost
 seaborn
+tensorflow
