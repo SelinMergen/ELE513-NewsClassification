@@ -40,10 +40,10 @@ porter_stemmer = PorterStemmer()
 
 # Define class labels with emojis
 CLASS_LABELS = {
-    0: "🌍 Dünya Haberleri",
-    1: "⚽ Spor",
-    2: "💼 İş Dünyası",
-    3: "🔬 Bilim ve Teknoloji"
+    1: "🌍 Dünya Haberleri",
+    2: "⚽ Spor",
+    3: "💼 İş Dünyası",
+    4: "🔬 Bilim ve Teknoloji"
 }
 
 # Preprocessing functions

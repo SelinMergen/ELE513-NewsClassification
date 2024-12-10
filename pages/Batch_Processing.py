@@ -49,19 +49,19 @@ st.markdown("""
 
 # Update CLASS_LABELS to match all possible classes
 CLASS_LABELS = {
-    0: "🌍 Dünya Haberleri",
-    1: "⚽ Spor",
-    2: "💼 İş Dünyası",
-    3: "🔬 Bilim ve Teknoloji",
-    4: "❓ Diğer"  # Add any additional class if needed
+    1: "🌍 Dünya Haberleri",
+    2: "⚽ Spor",
+    3: "💼 İş Dünyası",
+    4: "🔬 Bilim ve Teknoloji",
+    0: "❓ Diğer"  # Add any additional class if needed
 }
 
 CLASS_LABELS_WITHOUT_EMOJI = {
-    0: "Dünya Haberleri",
-    1: "Spor",
-    2: "İş Dünyası",
-    3: "Bilim ve Teknoloji",
-    4: "Diğer"
+    1: "Dünya Haberleri",
+    2: "Spor",
+    3: "İş Dünyası",
+    4: "Bilim ve Teknoloji",
+    0: "Diğer"
 }
 
 def process_batch(df, model_name, model_category):
