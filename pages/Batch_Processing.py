@@ -53,7 +53,7 @@ CLASS_LABELS = {
     2: "⚽ Spor",
     3: "💼 İş Dünyası",
     4: "🔬 Bilim ve Teknoloji",
-    0: "❓ Diğer"  # Add any additional class if needed
+    5: "❓ Diğer"  # Add any additional class if needed
 }
 
 CLASS_LABELS_WITHOUT_EMOJI = {
@@ -61,7 +61,7 @@ CLASS_LABELS_WITHOUT_EMOJI = {
     2: "Spor",
     3: "İş Dünyası",
     4: "Bilim ve Teknoloji",
-    0: "Diğer"
+    5: "Diğer"
 }
 
 def process_batch(df, model_name, model_category):
@@ -70,7 +70,7 @@ def process_batch(df, model_name, model_category):
     
     for _, row in df.iterrows():
         pred, conf = predict_text(row['title'], row['description'], model_name, model_category)
-        predictions.append(pred)
+        predictions.append(pred+1)
         confidences.append(conf)
     
     df['predicted_label'] = predictions
